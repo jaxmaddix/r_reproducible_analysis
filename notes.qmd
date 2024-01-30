@@ -1,0 +1,98 @@
+---
+title: "Notes"
+format: 
+  html:
+      toc: true
+      theme: darkly
+editor: source
+---
+# Chapter 1: Introduction to R and RStudio
+
+## Working in R Console
+### Useful Commands
+* esc key - cancel command
+
+## Mathematic Functions
+To call a function, type its name followed by (). The argument inside () is an input.  An argument is not always needed depending on the function:
+
+```{R}
+getwd()  #returns absolute filepath
+sin(1)
+```
+
+RStudio can autocomplete functions and arguments.
+
+Typing a ? before a command opens the help page for the command.
+
+You can also do comparisons, and R will tell you if it is true or false:
+```{R}
+1 == 1
+1 == 2
+1 != 2
+1 < 2
+1 <= 1
+```
+
+## Variables and Assignment
+
+### Single Values
+You can store values in the assignment operator
+```{R}
+x <- 1/40
+print(x)
+```
+
+x now contains the value 0.025. The environment table shows the current assignments. You can use variables in functions:
+
+```{R}
+log(x)
+```
+
+Variables can be reassigned:
+
+```{R}
+x <- 100
+print(x)
+```
+
+Assignment values can contain the variable being assigned to:
+
+```{R}
+x <- x + 1
+y <- x * 2
+print(x)
+print(y)
+```
+
+Variable names can contain letters, numbers, underscores, periods, but no spaces. It must start with a letter or period followed by a letter. A period followed by a letter creates a hidden variable ex. .mass.
+
+### Vectors
+You can also create vectors:
+
+```{R}
+1:5
+
+2^(1:5)
+
+x <- 1:5
+2^x
+```
+
+## Managing the Environment
+
+ls lists all  of the variables and functions stored in the global environment (working R session).
+
+```{R}
+rm(has_annotations) #note: this was a random variable I couldn't identify
+ls()
+```
+
+## Packages
+
+* installed.packages() - see what packages are installed
+* install.packages("packagename")
+* update.packages() - update installed packages
+* remove.packages("packagename")
+* library(packagename) - make package available for use
+
+Packages can also be managed in the packages tab of the lower right panel. They can be installed and updated from the Package tab with the Install and Update Buttons.
