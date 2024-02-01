@@ -96,3 +96,7 @@ ls()
 * library(packagename) - make package available for use
 
 Packages can also be managed in the packages tab of the lower right panel. They can be installed and updated from the Package tab with the Install and Update Buttons.
+
+# Chapter 2: Project Management with RStudio
+
+## 
