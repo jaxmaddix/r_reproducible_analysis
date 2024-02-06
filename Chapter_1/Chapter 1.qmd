@@ -6,7 +6,6 @@ format:
       theme: darkly
 editor: source
 ---
-# Chapter 1: Introduction to R and RStudio
 
 ## Working in R Console
 ### Useful Commands
